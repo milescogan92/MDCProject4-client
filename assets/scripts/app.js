@@ -26,6 +26,6 @@ $(() => {
     $('#create-repair-form').on('submit', repairEvents.onCreateRepair)
     $('#update-repair-form').on('submit', repairEvents.onUpdateRepair)
     $('#delete-repair-form').on('submit', repairEvents.onDeleteRepair)
-    $('#show-repair-form').on('submit'), repairEvents.onShowRepair)
+    $('#show-repair-form').on('submit', repairEvents.onShowRepair)
   })
 })
