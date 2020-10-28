@@ -13,16 +13,6 @@ const indexRepairs = function (data) {
   })
 }
 
-const showRepair = function (repairId) {
-  return $.ajax({
-    url: config.apiUrl + '/repairs/' + repairId,
-    method: 'GET',
-    headers: {
-      Authorization: 'Bearer ' + store.user.token
-    }
-  })
-}
-
 const createRepair = function (data) {
   return $.ajax({
     url: config.apiUrl + '/repairs',
@@ -63,7 +53,6 @@ const deleteRepair = function (repairId) {
 
 module.exports = {
   indexRepairs: indexRepairs,
-  showRepair: showRepair,
   createRepair: createRepair,
   updateRepair: updateRepair,
   deleteRepair: deleteRepair

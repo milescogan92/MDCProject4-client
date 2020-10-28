@@ -25,7 +25,6 @@ const onSignInSuccess = function (response) {
   $('#create-repair-form').show()
   $('#update-repair-form').show()
   $('#delete-repair-form').show()
-  $('#show-repair-form').show()
 }
 
 const onSignInFailure = function () {
@@ -52,7 +51,6 @@ const onSignOutSuccess = function () {
   $('#create-repair-form').hide()
   $('#update-repair-form').hide()
   $('#delete-repair-form').hide()
-  $('#show-repair-form').hide()
   $('#sign-up-form').show()
   $('#sign-in-form').show()
 }

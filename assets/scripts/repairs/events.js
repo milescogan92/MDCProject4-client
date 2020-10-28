@@ -12,16 +12,6 @@ const onIndexRepairs = function (event) {
     .catch(ui.onIndexRepairsFailure)
 }
 
-const onShowRepair = function (event) {
-  event.preventDefault()
-  const form = event.target
-  const data = getFormFields(form)
-  const repairId = data.repair.id // maybe plural, data.repairs.id?
-  api.showRepair(repairId)
-    .then(ui.onShowRepairSuccess)
-    .catch(ui.onShowRepairFailure)
-}
-
 const onCreateRepair = function (event) {
   event.preventDefault()
   const form = event.target
@@ -52,7 +42,6 @@ const onDeleteRepair = function (event) {
 
 module.exports = {
   onIndexRepairs: onIndexRepairs,
-  onShowRepair: onShowRepair,
   onCreateRepair: onCreateRepair,
   onUpdateRepair: onUpdateRepair,
   onDeleteRepair: onDeleteRepair
