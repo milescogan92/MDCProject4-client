@@ -34,7 +34,7 @@ const onDeleteRepair = function (event) {
   event.preventDefault()
   const form = event.target
   const data = getFormFields(form)
-  const repairId = data.repair.id // maybe plural, data.repairs.id?
+  const repairId = data.repair.id
   api.deleteRepair(repairId)
     .then(ui.onDeleteRepairSuccess)
     .catch(ui.onDeleteRepairFailure)

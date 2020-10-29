@@ -26,7 +26,7 @@ const createRepair = function (data) {
 
 const updateRepair = function (data) {
   return $.ajax({
-    url: config.apiUrl + '/repairs/' + data.repair.id, // singular or plural? for repair.id
+    url: config.apiUrl + '/repairs/' + data.repair.id,
     method: 'PATCH',
     headers: {
       Authorization: 'Bearer ' + store.user.token
@@ -35,7 +35,8 @@ const updateRepair = function (data) {
       repair: {
         date: data.repair.date,
         type: data.repair.type,
-        price: data.repair.price
+        price: data.repair.price,
+        mileage: data.repair.mileage
       }
     }
   })

@@ -12,6 +12,7 @@ const onIndexRepairsSuccess = function (response) {
     Date: ${data.date} \n
     Type: ${data.type} \n
     Price: ${data.price} \n
+    Mileage: ${data.mileage} \n
     ID: ${data._id} </li>`
     return sendhtml
   })
