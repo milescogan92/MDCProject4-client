@@ -1,7 +1,8 @@
-Miles' Project 4 client side readme
+Miles' Project 4 client side readme - Car Repair Tracker
 
 ERD: https://imgur.com/mVGxWYo
 Wireframe: https://imgur.com/YhlNcXJ
+Application Screenshot: https://imgur.com/LYnRbAj
 
 User stories:
 
@@ -20,5 +21,7 @@ One issue that came up during development was that the index feature for repairs
 
 In version two, I would like this app to have the ability to track multiple cars for a single user, rather than assuming a user has a single car.  Addtionally, I wanted to spend more time on the styling for this project but got sidetracked by events in my personal life.  Version two would add more fonts, animations, and use of bootstrap.
 
-Deployed front end site:
-Deployed back end site:
+Set Up / Install Instructions: This application is the client side portion and is hosted through github publicly at the link below.  However, you can download both repositories as a user and run both locally if that is what you wish.  Both need to be run in tandem, with grunt serve on the front end and npm run server on the back end.
+
+Deployed front end site: https://milescogan92.github.io/MDCProject4-client/
+Deployed back end site: https://arcane-lake-50388.herokuapp.com/
